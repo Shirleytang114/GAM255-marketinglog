@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>行銷日誌</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="log-container">
+        <h1>行銷日誌</h1>
+        <p>
+            <a href="index.html" class="back-link">← 返回儀表板</a>
+            
+            <span class="button-group">
+                <button onclick="exportReport()" class="export-btn">輸出成報表</button> 
+                <button onclick="clearLog()" class="clear-btn">清空所有日誌</button>
+            </span>
+            </p>
+        
+        <div class="log-card">
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th> 
+                            <th>日期</th>
+                            <th>行銷活動種類</th>
+                            <th>名稱</th>
+                            <th>活動前 BHI</th>
+                            <th>活動區間</th>
+                            <th>活動後 BHI</th>
+                            <th>成本</th>
+                            <th>營業額</th>
+                            </tr>
+                    </thead>
+                    <tbody id="log-table-body">
+                        <tr>
+                            <td colspan="9" class="placeholder-text">目前沒有已引用的行銷活動...</td>
+                            </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="log_script.js"></script>
+</body>
+</html>
