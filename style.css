@@ -29,8 +29,10 @@ h1 {
     text-decoration: none;
     font-weight: 500;
 }
-.back-link:hover {
-    text-decoration: underline;
+@media (hover: hover) {
+    .back-link:hover {
+        text-decoration: underline;
+    }
 }
 
 /* ▼▼▼ 【新增：按鈕群組樣式】 ▼▼▼ */

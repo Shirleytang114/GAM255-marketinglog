@@ -1,14 +1,6 @@
 // 頁面載入完成後，執行 loadLogData 函數
 document.addEventListener('DOMContentLoaded', () => {
     loadLogData();
-
-    const backLink = document.getElementById('back-to-dashboard-link');
-    if (backLink) {
-        backLink.addEventListener('click', (event) => {
-            event.preventDefault();
-            window.location.href = backLink.href;
-        });
-    }
 });
 
 function loadLogData() {
